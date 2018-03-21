@@ -1,30 +1,24 @@
-[![Build Status](https://travis-ci.org/c3pr/node-git-client.svg?branch=master)](https://travis-ci.org/c3pr/node-git-client)
+[![Build Status](https://travis-ci.org/c3pr/node-c3pr-logger.svg?branch=master)](https://travis-ci.org/c3pr/node-c3pr-logger)
 
-# node-git-client
+# node-c3pr-logger
 
-Node.js layer on top of shell git command line.
+Node.js C3PR client for remote logging.
 
 Have a look at [`src`](src) folder to understand what functions are available.
 
 ### Usage:
 
 ```bash
-# Change 0.1.0 below with the desired version tag
-npm i -S c3pr/node-git-client#0.1.0
+# Change 1.0.0 below with the desired version tag
+npm i -S c3pr/node-c3pr-logger#1.0.0
 ```
 
 Example at a JavaScript file:
 
 ```javascript
-const cloneRepositoryLocally = require("node-git-client").cloneRepositoryLocally;
-
-(async () => {
-
-    const cloneFolder = await cloneRepositoryLocally({
-        ... 
-    });
-
-    ...
-
-})();
+const log = require("node-c3pr-logger").log;
+log.info(...);
+log.debug(...);
 ```
+
+See [test file](src/log.test.js) for usages.

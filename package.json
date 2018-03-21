@@ -1,30 +1,29 @@
 {
-  "name": "node-git-client",
-  "version": "4.1.0",
-  "description": "Node.js layer above shell git command line",
+  "name": "node-c3pr-logger",
+  "version": "1.0.0",
+  "description": "Node.js client for remote logging",
   "main": "index.js",
   "scripts": {
     "test": "mocha src/**/*.test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/c3pr/node-git-client.git"
+    "url": "git+https://github.com/c3pr/node-c3pr-logger.git"
   },
   "keywords": [
-    "git",
-    "client"
+    "logging"
   ],
   "author": "acdcjunior",
   "license": "LGPL-3.0",
   "bugs": {
-    "url": "https://github.com/c3pr/node-git-client/issues"
+    "url": "https://github.com/c3pr/node-c3pr-logger/issues"
   },
-  "homepage": "https://github.com/c3pr/node-git-client#readme",
+  "homepage": "https://github.com/c3pr/node-c3pr-logger#readme",
   "dependencies": {
-    "mkdirp": "^0.5.1",
-    "uuid": "^3.2.1"
+    "mongodb": "^3.0.4"
   },
   "devDependencies": {
+    "@types/mongodb": "^3.0.8",
     "@types/sinon-chai": "^2.7.29",
     "chai": "^4.1.2",
     "mocha": "^5.0.0",
